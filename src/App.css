@@ -1,0 +1,31 @@
+div.App {
+  /* background: linear-gradient(45deg,
+      #212121 0%,
+      #333333 25%,
+      #424242 50%,
+      #535353 75%,
+      #616161 100%); */
+
+  /* background-color: #000530; */
+
+  /* background: linear-gradient(135deg, #000530, #1a1a2e, #3b4c74); */
+  /* background: linear-gradient(135deg, #000530, #121a28, #2c3e56); */
+  background: linear-gradient(135deg, #000000, #1c1c1c, #333333);
+  cursor:cell;
+  height: 100vh;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+div.App {
+  overflow: scroll; /* Enable scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer */
+}
+
+div.App::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}

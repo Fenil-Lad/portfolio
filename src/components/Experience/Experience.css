@@ -1,0 +1,44 @@
+.experience-container {
+    padding: 20px;
+}
+
+.experience-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: white;
+    background-color: #333333;
+
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-role {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.experience-company {
+    font-size: 1rem;
+    color: white;
+}
+
+.experience-duration {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.experience-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+.separator {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}

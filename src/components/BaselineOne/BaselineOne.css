@@ -1,0 +1,76 @@
+div.baseline
+{
+    color: white;
+    margin-top: 50px;
+}
+
+div.listening_line
+{
+    background-color: white;
+    width: 95%;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+div.baseline_div
+{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.baseline_div > span>  a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+@media(width < 1000px)
+{
+    div.baseline
+    {
+        font-size: 13px;
+    }
+}
+
+@media(width < 750px)
+{
+    div.baseline
+    {
+        font-size: 12px;
+    }
+}
+
+
+@media(width < 650px)
+{
+    div.baseline
+    {
+        font-size: 11px;
+    }
+
+}
+
+@media (min-width: 351px) and (max-width: 400px) {
+  div.baseline
+  {
+      font-size: 9px !important;
+  }
+}
+
+
+@media (min-width: 250px) and (max-width: 350px) {
+    div.baseline
+    {
+        font-size: 9px !important;
+    }
+}

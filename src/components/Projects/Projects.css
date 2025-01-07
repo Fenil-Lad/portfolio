@@ -1,0 +1,177 @@
+div.projects {
+    color: white;
+    margin-bottom: 100px;
+}
+
+div.projects_div_section_one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.projects_div_section_one_sub_two {
+    font-size: 30px;
+    max-width: 900px;
+}
+
+div.projects_div_section_two {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+
+div.projects_div_section_two_sub {
+    flex: 1;
+    /* Ensure they scale proportionally within the container */
+    height: auto;
+    /* Allow the height to adjust dynamically */
+    aspect-ratio: 3 / 4;
+    /* Maintain the aspect ratio (similar to 480px by 620px) */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    /* Use a viewport-based unit for responsive font size */
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+div.projects_div_section_two_sub:hover {
+    transform: scale(1.02);
+}
+
+
+
+div.projects_div_section_two_sub_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.projects_div_section_two_sub_img>a {
+    color: white;
+    text-decoration: none;
+}
+
+img#seneca_logo_img {
+    filter: brightness(1000%);
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+img#neolistic_logo_img {
+    width: 120px;
+}
+
+img#subnet_spectra_logo_img {
+    width: 150px;
+}
+
+div#projects_div_section_two_sub_one {
+    background: #da291c;
+}
+
+div#projects_div_section_two_sub_two {
+    background: linear-gradient(180deg, rgba(64, 42, 178, 1) 0%, rgba(180, 99, 211, 1) 100%);
+}
+
+div#projects_div_section_two_sub_three {
+    background-color: black;
+}
+
+div.projects_div_section_two_sub_btn_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button.projects_div_section_two_sub_btn {
+    color: white;
+    background: transparent;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid white;
+    margin-top: 10px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button.projects_div_section_two_sub_btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+button.closeBtn {
+    width: 100%;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    display: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.278);
+}
+
+span#projects_div_section_one_sub_two_span_one {
+    padding-left: 100px;
+}
+
+@media(width < 1111px) {
+    div.projects_div_section_two {
+        flex-direction: column;
+        height: 1100px;
+    }
+}
+
+@media(width < 850px) {
+    div.projects_div_section_one_sub_two {
+        font-size: 17px;
+        max-width: 300px;
+    }
+
+    span#projects_div_section_one_sub_two_span_one {
+        padding-left: 40px;
+    }
+}
+
+@media(width < 550px) {
+    div.projects_div_section_one {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    div.projects_div_section_one_sub_two {
+        padding: 10px;
+        font-size: 16px;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 400px) {
+    div.projects_div_section_one_sub_two {
+        font-size: 10px !important;
+    }
+}
+
+
+@media (min-width: 250px) and (max-width: 350px) {
+    div.projects_div_section_one_sub_two {
+        font-size: 10px !important;
+    }
+}
