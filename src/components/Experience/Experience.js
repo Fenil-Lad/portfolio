@@ -50,11 +50,11 @@ const Experience = () => {
         }
     ];
 
-    const formatDate = (date) => {
-        return date === "Present"
-            ? "Present"
-            : new Date(date).toLocaleString("en-US", { month: "short", year: "numeric" });
-    };
+    // const formatDate = (date) => {
+    //     return date === "Present"
+    //         ? "Present"
+    //         : new Date(date).toLocaleString("en-US", { month: "short", year: "numeric" });
+    // };
 
     return (
         <>
@@ -72,7 +72,7 @@ const Experience = () => {
                                         <h3 className="experience-role">{experience.title}</h3>
                                         <p className="experience-company">{experience.company}</p>
                                         <span className="experience-dates">
-                                            {formatDate(experience.startDate)} - {formatDate(experience.endDate)}
+                                            {experience.startDate} - {experience.endDate}
                                         </span>
                                     </div>
                                     <ul className="job-details">
