@@ -11,7 +11,6 @@ div.App {
   /* background: linear-gradient(135deg, #000530, #1a1a2e, #3b4c74); */
   /* background: linear-gradient(135deg, #000530, #121a28, #2c3e56); */
   background: linear-gradient(135deg, #000000, #1c1c1c, #333333);
-  cursor:cell;
   height: 100vh;
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;

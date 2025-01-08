@@ -18,7 +18,7 @@ function Projects() {
     <div className="projects">
       <BaselineTwo></BaselineTwo>
       <div className="projects_div_section_one">
-        <div className="projects_div_section_one_sub_one"><CircleWithSVG radius={85} innerText='VIEW ALL PROJECTS' fontSize={14}></CircleWithSVG></div>
+        <div className="projects_div_section_one_sub_one"><CircleWithSVG radius={85} innerText='PROJECTS' fontSize={14}></CircleWithSVG></div>
         <div className="projects_div_section_one_sub_two">
           <span>
             <span id="projects_div_section_one_sub_two_span_one">HERE ARE SOME SELECT PROJECTS THAT SHOWCASE</span>
