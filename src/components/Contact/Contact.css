@@ -1,14 +1,16 @@
 .contact-container {
     text-align: center;
-    padding: 20px;
+    padding: 20px; /* Increased padding for more space inside the container */
     background: rgba(255, 255, 255, 0.1);
     color: #f9f9f9;
-    max-width: 92%;
+    max-width:80%; /* Reduced max-width to allow more space on the sides */
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
     border-radius: 15px;
     text-transform: uppercase;
+    padding-left: 30px;  /* Increased left padding for more space */
+    padding-right: 30px; /* Increased right padding for more space */
 }
 
 .contact-title {
