@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../Navigator/Navigator.css';
 import downArrow from '../../img/downArrow.png';
-import Bot from '../Bot/Bot';
+// import Bot from '../Bot/Bot';
 
 const Navigator = () => {
     const sections = [
@@ -15,7 +15,7 @@ const Navigator = () => {
     ];
     
     const [navigatorToggle, setNavigatorToggle] = useState(false);
-    const [botToggle, setBotToggle] = useState(false);
+    // const [botToggle, setBotToggle] = useState(false);
     const [rotateArrow, setRotateArrow] = useState("0deg");
     const [isClosing, setIsClosing] = useState(false);
     const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
@@ -37,13 +37,13 @@ const Navigator = () => {
         toggleArrow();
     };
 
-    const toggleBot = () => {
-        setBotToggle(true);
-    };
+    // const toggleBot = () => {
+    //     setBotToggle(true);
+    // };
 
-    const toggleBotFalse = () => {
-        setBotToggle(false);
-    };
+    // const toggleBotFalse = () => {
+    //     setBotToggle(false);
+    // };
 
     // Function to scroll to a section
     const scrollToSection = (index) => {
@@ -103,9 +103,9 @@ const Navigator = () => {
                     </button>
                 </nav>
             )}
-            {botToggle && (
+            {/* {botToggle && (
                 <Bot toggleBotFalse={toggleBotFalse} />
-            )}
+            )} */}
         </div>
     );
 };
