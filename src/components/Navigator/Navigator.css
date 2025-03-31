@@ -1,5 +1,4 @@
-div#navContainer
-{
+div#navContainer {
     position: fixed;
     width: 100%;
     display: flex;
@@ -47,10 +46,8 @@ button#downArrowBtn>img {
     animation: slideOutToTop 0.1s ease-in forwards;
 }
 
-#currentSection
-{
+#currentSection {
     color: white;
-    /* width: 34%; */
     text-align: center;
     text-transform: uppercase;
 }
@@ -83,8 +80,7 @@ button#downArrowBtn>img {
     }
 }
 
-button.navBtn
-{
+button.navBtn {
     background: none;
     border: none;
     width: 100px;
@@ -94,33 +90,36 @@ button.navBtn
     align-items: center;
 }
 
-button#upNextArrowBtn
-{
+button#upNextArrowBtn {
     border-radius: 17px 0px 0px 17px;
     padding-top: 5px;
     width: 50px;
     /* border-right: 0.5px solid rgba(255, 255, 255, 0.2); */
 }
 
-button#downNextArrowBtn
-{
+button#downNextArrowBtn {
     border-radius: 0px 17px 17px 0px;
     padding-top: 5px;
     width: 50px;
     /* border-left: 0.5px solid rgba(255, 255, 255, 0.2); */
 }
 
-button#AINextArrowBtn
-{
+button#AINextArrowBtn {
     width: 33%;
 }
 
-button#AINextArrowBtn>img
-{
+button#AINextArrowBtn>img {
     width: 25px;
 }
 
-button.navBtn>span>svg
-{
+button.navBtn>span>svg {
     width: 15px;
+}
+
+
+@media (max-width: 800px) {
+
+    #currentSection {
+        font-size: 12px;
+    }
 }
