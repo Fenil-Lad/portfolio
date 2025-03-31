@@ -1,0 +1,126 @@
+div#navContainer
+{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+button#downArrowBtn {
+    width: 50px;
+    height: 22px;
+    background: none;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+button#downArrowBtn>img {
+    width: 15px;
+    margin-top: 2px;
+}
+
+
+.dot-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 17px;
+    width: 230px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: slideInFromTop 0.1s ease-out forwards;
+    margin-top: 20px;
+
+}
+
+/* Reverse animation for closing */
+.dot-nav.closing {
+    animation: slideOutToTop 0.1s ease-in forwards;
+}
+
+#currentSection
+{
+    color: white;
+    /* width: 34%; */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Add this to your Navigator.css */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        /* Start from above the screen */
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        /* End at its normal position */
+        opacity: 1;
+    }
+}
+
+/* Slide-out animation */
+@keyframes slideOutToTop {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+button.navBtn
+{
+    background: none;
+    border: none;
+    width: 100px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#upNextArrowBtn
+{
+    border-radius: 17px 0px 0px 17px;
+    padding-top: 5px;
+    width: 50px;
+    /* border-right: 0.5px solid rgba(255, 255, 255, 0.2); */
+}
+
+button#downNextArrowBtn
+{
+    border-radius: 0px 17px 17px 0px;
+    padding-top: 5px;
+    width: 50px;
+    /* border-left: 0.5px solid rgba(255, 255, 255, 0.2); */
+}
+
+button#AINextArrowBtn
+{
+    width: 33%;
+}
+
+button#AINextArrowBtn>img
+{
+    width: 25px;
+}
+
+button.navBtn>span>svg
+{
+    width: 15px;
+}

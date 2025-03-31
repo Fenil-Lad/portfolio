@@ -15,7 +15,7 @@ function Projects() {
   };
 
   return (
-    <div className="projects">
+    <div className="projects" id='projects'>
       <BaselineTwo></BaselineTwo>
       <div className="projects_div_section_one">
         <div className="projects_div_section_one_sub_one"><CircleWithSVG radius={85} innerText='PROJECTS' fontSize={14}></CircleWithSVG></div>

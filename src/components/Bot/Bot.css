@@ -1,0 +1,116 @@
+.bot-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 110px;
+    height: 430px;
+    background: none;
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 1000;
+}
+
+.chat-box {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(8, 8, 8, 0.399);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.input-box {
+    width: 80%;
+    height: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+    background: none;
+}
+
+.input-box::placeholder {
+    color: rgb(192, 192, 192);
+}
+
+.send-button {
+    padding: 11px 18px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1px;
+}
+
+.response-box {
+    background: rgba(8, 8, 8, 0.399);
+    background: rgba(0, 0, 0, 0.577);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 12px;
+    color: #ccc;
+    margin-top: 20px;
+    font-size: 16px;
+    height: 200px;
+    white-space: pre-wrap;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.loading-message {
+    font-style: italic;
+    color: #999;
+    animation: typingEffect 1.5s infinite steps(5, end);
+}
+
+@keyframes typingEffect {
+    0% { content: "Typing.";}
+    33% { content: "Typing.."; }
+    66% { content: "Typing..."; }
+    100% { content: "Typing.";}
+}
+
+.bot-response {
+    margin-top: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+button#closeBotBtn {
+    background: none;
+    border: none;
+}
+
+button#closeBotBtn > img {
+    width: 18px;
+}

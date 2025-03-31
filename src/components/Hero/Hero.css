@@ -2,6 +2,7 @@ div.hero {
     color: white;
     display: flex;
     flex-direction: column;
+    margin-top: 90px;
 }
 
 div.hero_div_one {
@@ -103,6 +104,50 @@ div#hero_circle_div {
         font-size: 12px;
     }
 }
+
+.hero-section-letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px); /* Starts from a small lower position */
+    animation: fadeIn 0.8s forwards;
+    animation-delay: var(--letter-delay); /* Custom delay per letter */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-section-letter.space {
+    display: inline-block; /* Ensure spaces are displayed inline */
+    opacity: 1; /* No animation on spaces, they just appear */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #hero_section_sub_span {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.5s ease-in-out forwards; /* Animation duration */
+    animation-delay: 1s; /* Delay to make it appear after other animations */
+  }
+  
+
+
 
 @media (min-width: 501px) and (max-width: 650px) {
     div#hero_section_two {

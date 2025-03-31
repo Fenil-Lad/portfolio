@@ -1,6 +1,6 @@
 import './About.css';
 import BaselineOne from '../BaselineOne/BaselineOne';
-import me from '../../img/me.jpg';
+import me from '../../img/fenil_lad.jpeg';
 import CircleWithSVG from '../CircleWithSVG/CircleWithSVG';
 
 function About() {

@@ -47,11 +47,6 @@ div.projects_div_section_two_sub {
     overflow: hidden;
 }
 
-div.projects_div_section_two_sub:hover {
-    transform: scale(1.02);
-}
-
-
 
 div.projects_div_section_two_sub_img {
     display: flex;

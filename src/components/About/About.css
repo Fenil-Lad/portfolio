@@ -35,15 +35,11 @@ div.about_sub_section_three_sub {
 }
 
 div.about_sub_section_two_sub>img {
-    width: 700px;
-    border-radius: 50px;
+    width: 570px;
+    border-radius: 30px;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease-in-out;
     transform-origin: center center;
-}
-
-div.about_sub_section_two_sub>img:hover {
-    transform: scale(1.02);
 }
 
 div.about_sub_section_two {

@@ -7,7 +7,7 @@ import staplesLogo from '../../img/staples_canada_logo.jpeg';
 const Experience = () => {
     const experiences = [
         {
-            title: "IT Support Specialist (Tier 1)",
+            title: "Technical Support",
             company: "Seneca Polytechnic",
             startDate: "January 2024",
             endDate: "January 2025",
@@ -21,7 +21,7 @@ const Experience = () => {
             image: senecaLogo
         },
         {
-            title: "Lead IT Support Specialist (Tier 1)",
+            title: "Technical Support Team Lead",
             company: "Seneca Polytechnic",
             startDate: "April 2023",
             endDate: "January 2024",
@@ -49,12 +49,6 @@ const Experience = () => {
             image: staplesLogo
         }
     ];
-
-    // const formatDate = (date) => {
-    //     return date === "Present"
-    //         ? "Present"
-    //         : new Date(date).toLocaleString("en-US", { month: "short", year: "numeric" });
-    // };
 
     return (
         <>
